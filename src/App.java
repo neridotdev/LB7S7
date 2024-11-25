@@ -2,6 +2,32 @@
 
 public class App {
 
+   
+    public static void main(String[] args) {
+        int A[] = {24, 39, 19, 36, 22, 57, 91, 16, 73, 45};
+//                  0   1   2   3   4   5   6   7   8   9
+        Ejercicio1(A);
+        Ejercicio2(A);
+        Ejercicio3(A);
+        Ejercicio4(A);
+        Ejercicio5(A);
+        Ejercicio6(A);
+        Ejercicio7(A);
+        Ejercicio8(A);
+        Ejercicio9(A);
+        Ejercicio10(A);
+        Ejercicio11(A);
+        Ejercicio12(A);
+        Ejercicio28();
+
+        int s = 0;
+        for(int k=1; k<=100; k++){
+            s=s+k;
+
+        }
+        System.out.println("La suma de 1 a 100: " + s);
+    }
+
     public static void ImprimeArreglo(int X[]){
         int n = X.length;
         for(int k=0; k<=n-1; k++){
@@ -137,26 +163,49 @@ public class App {
     public static void Ejercicio10(int X[]){
         System.out.println("****** Ejercicio 10 ******");
         System.out.println("10. Imprima los numeros divisibles de 3.");
+        
+        for(int i=0 ; i< X.length ;i++){
+            if(X[i] % 3 == 0){
+                System.out.println(X[i] + "\t");
+            }
+        }
 
 
 
     }//Fin del metodo Ejercicio10
 
     public static void Ejercicio11(int X[]){
-        System.out.println("****** Ejercicio 10 ******");
-        System.out.println("10. Imprima los numeros divisibles de 3.");
-
-
+        System.out.println("****** Ejercicio 11 ******");
+        System.out.println("11. Cuente los numeros divisibles de 3.");
+        int cont = 0;
+        for(int i=0 ; i< X.length ;i++){
+            if(X[i] % 3 == 0){
+                cont++;
+            }
+        }
+        
+        System.out.println("La cantidad de elementos divisibles entre 3 en el arreglo es: "+cont);
 
     }//Fin del metodo Ejercicio11
 
     public static void Ejercicio12(int X[]){
-        System.out.println("****** Ejercicio 10 ******");
-        System.out.println("10. Imprima los numeros divisibles de 3.");
+        System.out.println("****** Ejercicio 12 ******");
+        System.out.println("12. Sume los numeros divisibles de 3.");
 
+        int sum = 0;
 
+        for(int i=0 ; i< X.length ;i++){
+            if(X[i] % 3 == 0){
+
+                sum+=X[i];
+
+            }
+        }
+
+        System.out.println("La suma de los numeros divisibles entre 3 del arreglo es: "+sum);
 
     }//Fin del metodo Ejercicio12
+
 
     public static void Ejercicio28(){
 
@@ -173,29 +222,5 @@ public class App {
         EscribeLinea();
     }//Fin del metodo Ejercicio28
 
-    public static void main(String[] args) {
-        int A[] = {24, 39, 19, 36, 22, 57, 91, 16, 73, 45};
-//                  0   1   2   3   4   5   6   7   8   9
-        Ejercicio1(A);
-        Ejercicio2(A);
-        Ejercicio3(A);
-        Ejercicio4(A);
-        Ejercicio5(A);
-        Ejercicio6(A);
-        Ejercicio7(A);
-        Ejercicio8(A);
-        Ejercicio9(A);
-        Ejercicio10(A);
-        Ejercicio11(A);
-        Ejercicio12(A);
-        Ejercicio28();
-
-        int s = 0;
-        for(int k=1; k<=100; k++){
-            s=s+k;
-
-        }
-        System.out.println("La suma de 1 a 100: " + s);
-    }
 
 }//Fin de la clase GuiaArreglos1255
